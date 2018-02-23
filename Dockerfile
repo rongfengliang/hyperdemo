@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . .
 RUN cargo build --release
 
-FROM buildpack-deps:stretch
+FROM centos
 WORKDIR /app
 EXPOSE 3000
 COPY --from=build /app/target/release/hyperdemo /app/hyperdemo
