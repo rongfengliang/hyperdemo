@@ -1,4 +1,4 @@
-FROM rust as build
+FROM rust:1.24-stretch as build
 WORKDIR /app
 COPY . .
 RUN cargo build --release
