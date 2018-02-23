@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . .
 RUN cargo build --release
 
-FROM alpine:latest
+FROM buildpack-deps:stretch
 WORKDIR /app
 EXPOSE 3000
 COPY --from=build /app/target/release/hyperdemo /app/hyperdemo
