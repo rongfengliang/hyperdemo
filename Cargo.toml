@@ -1,0 +1,8 @@
+[package]
+name = "hyperdemo"
+version = "0.1.0"
+authors = ["dalongrong <1141591465@qq.com>"]
+
+[dependencies]
+futures = "0.1.14"
+hyper = "0.11.2"
