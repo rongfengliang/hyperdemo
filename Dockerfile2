@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . .
 RUN cargo build --release
 
-FROM alpine:3.5
+FROM buildpack-deps:jessie
 WORKDIR /app
 EXPOSE 3000
 COPY --from=build /app/target/release/hyperdemo /app/hyperdemo
