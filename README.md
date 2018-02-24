@@ -1,10 +1,9 @@
 # hyper rust web framework demo
 
- <img src="doc/jenkins_config.png" align=center /><br>
- <img src="doc/jenkins_blue_ocean.png" align=center /><br>
- <img src="doc/jenkins_branch.png"  align=center /><br>
- <img src="doc/jenkinsfile.png"  align=center /><br>
-
+![Alt text](/doc/jenkins_config.png)
+![Alt text](/doc/jenkins_blue_ocean.png)
+![Alt text](/doc/jenkins_branch.png)
+![Alt text](/doc/jenkinsfile.png)
 ## with docker build
 ```bash
 docker build -t myhyper .
