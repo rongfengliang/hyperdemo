@@ -1,9 +1,9 @@
-FROM rust as build
+FROM dolphm/ubuntu-latest-rust-nightly as build
 WORKDIR /app
 COPY . .
 RUN cargo build --release
 
-FROM rust
+FROM centos
 WORKDIR /app
 EXPOSE 3000
 COPY --from=build /app/target/release/hyperdemo /app/hyperdemo
